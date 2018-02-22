@@ -1,0 +1,16 @@
+<div class="div-main">
+  <h3>Original - Data from Json - Press any table header to sort according</h3>
+  <table class="table table-striped">
+    <tr>
+      <th (click)="sortData('name')" >Name</th>
+      <th (click)="sortData('category')">Category</th>
+      <th (click)="sortData('amount')">Amount</th>
+    </tr>
+    <tr *ngFor="let data of dataFromServer">
+      <td>{{data.name}}</td>
+      <td>{{data.category}}</td>
+      <td>{{data.amount}}</td>
+
+    </tr>
+  </table>
+</div>
